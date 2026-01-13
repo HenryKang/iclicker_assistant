@@ -2,35 +2,12 @@
 
 AI-powered Chrome extension that helps with iClicker attendance questions.
 
-## ⚠️ Disclaimer
-This extension is for educational purposes and attendance-based questions only. Not for graded assessments.
-
 ## 🏗️ Architecture
 - **Extension:** Runs in Chrome, detects questions
 - **Server:** Local Node.js server, keeps API keys secure
 - **AI:** Uses OpenAI or Anthropic APIs
 
-## 📁 Project Structure
-```
-iclicker-assistant/
-  ├── extension/     # Chrome extension files
-  │   ├── manifest.json
-  │   ├── content.js
-  │   ├── background.js
-  │   ├── popup.html
-  │   └── popup.js
-  └── server/        # Local Node.js server
-      ├── server.js
-      ├── package.json
-      └── .env (not included - create your own!)
-```
-
 ## 🚀 Setup Instructions
-
-### Prerequisites
-- Node.js installed
-- Chrome browser
-- OpenAI or Anthropic API key
 
 ### Server Setup
 1. Navigate to server folder:
@@ -72,16 +49,3 @@ iclicker-assistant/
 - **Backend:** Node.js, Express.js
 - **AI:** OpenAI API, Anthropic API
 - **Security:** dotenv, CORS
-
-## 🎓 Learning Objectives
-This project demonstrates:
-- Chrome extension development
-- Client-server architecture
-- REST API design
-- Secure API key management
-- Async JavaScript
-- DOM manipulation
-- AI API integration
-
-## 📄 License
-MIT License - feel free to use for educational purposes
