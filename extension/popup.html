@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    h2 {
+      margin-top: 0;
+      color: #333;
+    }
+    .setting {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    select {
+      width: 100%;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .status {
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    .status.success {
+      background-color: #ccffcc;
+      color: #006600;
+    }
+    .status.error {
+      background-color: #ffcccc;
+      color: #cc0000;
+    }
+    .status.info {
+      background-color: #f0f0f0;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h2>&#127891; <span style="color: blue;">lazy<span style="color: black;">Clicker</h2>
+  
+  <div class="setting">
+    <label>AI Provider:</label>
+    <select id="provider">
+      <option value="openai">OpenAI (GPT)</option>
+      <option value="anthropic">Anthropic (Claude)</option>
+    </select>
+  </div>
+
+  <div class="setting">
+    <label>
+      <input type="checkbox" id="autoAnswer"> Auto-answer questions
+    </label>
+  </div>
+
+  <button id="testConnection">Test Connection</button>
+  <button id="save">Save Settings</button>
+  
+  <div class="status info" id="status">
+    Make sure server is running on localhost:3000
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
